@@ -1,10 +1,5 @@
 #define NOSPLIT 4
 
-// Pause()
-TEXT ·Pause(SB),NOSPLIT,$0-0
-	PAUSE
-	RET
-
 // void Memmove(dst unsafe.Pointer, src unsafe.Pointer, n uintptr)
 TEXT ·Memmove(SB),NOSPLIT,$0-24
 

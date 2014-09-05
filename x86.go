@@ -10,7 +10,7 @@ import (
 //go:noescape
 func Pause()
 
-//no-op
+// no-op
 func pause() {}
 
 //go:noescape
