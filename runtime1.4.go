@@ -7,5 +7,11 @@ func Acquire(sem *uint32) {
 }
 
 func Release(sem *uintew) {
-	asyncsemacquire(sem)
+	asyncsemrelease(sem)
 }
+
+//go:noescape
+func asyncsemrelease(s *uint32)
+
+//go:noescape
+func asyncsemacquire(s *uint32)
